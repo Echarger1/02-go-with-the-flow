@@ -14,15 +14,31 @@ namespace GoWithTheFlow
             Console.WriteLine("Lamp doesn't work.");
             Console.WriteLine("Is lamp pluged in?");
 
-            string answerY = Console.ReadLine();
+            string answer = Console.ReadLine();
 
+            if (answer == "yes")
             {
-                Console.WriteLine("Is the bulb turned off.");
+                Console.WriteLine("Is the bulb burned out?");
+                answer = Console.ReadLine();
+                if (answer == "yes") 
+                {
+                    Console.WriteLine("Replace bulb.");
+                }
+                else 
+                {
+                    Console.WriteLine("Repair Lamp.");
+                }
             }
 
+            else
+            {
+                Console.WriteLine("Plug in lamp.");
+            }
+            
+
+
+
             Console.ReadKey();
-
-
 
 
 
