@@ -16,6 +16,9 @@ namespace GoWithTheFlow
 
             string answerY = Console.ReadLine();
 
+            {
+                Console.WriteLine("Is the bulb turned off.");
+            }
 
             Console.ReadKey();
 
