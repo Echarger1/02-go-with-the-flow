@@ -10,39 +10,37 @@ namespace GoWithTheFlow
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Lamp doesn't work.");
-            Console.WriteLine("Is lamp pluged in?");
-
-            string answer = Console.ReadLine();
-
-            if (answer == "yes")
+            while (true)
             {
-                Console.WriteLine("Is the bulb burned out?");
-                answer = Console.ReadLine();
-                if (answer == "yes") 
-                {
-                    Console.WriteLine("Replace bulb.");
-                }
-                else 
-                {
-                    Console.WriteLine("Repair Lamp.");
-                }
-            }
+                
+                Console.WriteLine("Lamp doesn't work.");
+                Console.WriteLine("Is lamp pluged in?");
 
-            else
-            {
-                Console.WriteLine("Plug in lamp.");
+                string answer = Console.ReadLine();
+
+                if (answer == "yes")
+                {
+                    Console.WriteLine("Is the bulb burned out?");
+                    answer = Console.ReadLine();
+                    if (answer == "yes")
+                    {
+                        Console.WriteLine("Replace bulb.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Repair Lamp.");
+                    }
+                }
+
+                else
+                {
+                    Console.WriteLine("Plug in lamp.");
+                }
+
+
+
             }
             
-
-
-
-            Console.ReadKey();
-
-
-
-       
 
         }
     }
